@@ -100,7 +100,7 @@ header.active .bar_icon .fa-solid{
 }
 
 .main_layout{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 80%;
