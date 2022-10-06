@@ -1,4 +1,5 @@
 const header = document.querySelector("header");
+const bar = document.getElementById("bar");
 
 window.addEventListener("scroll",() => {
     const scroll_width = window.scrollY;
@@ -7,4 +8,4 @@ window.addEventListener("scroll",() => {
     }else{
         header.classList.remove("active");
     }
-})
+});

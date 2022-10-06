@@ -29,6 +29,9 @@ a{
 li{
     list-style-type: none;
 }
+.bar_icon{
+    display: none;
+}
 /* common css End here  */
 
 /* Header css start here  */
@@ -74,6 +77,22 @@ nav .menu ul li a{
 header.active nav .menu ul li a{
     color: var(--color_white);
 }
+
+
+/* MOBILE SCREEN CSS  */
+.bar_icon .fa-solid{
+    font-size: 30px;
+    color: var(--sticky_background);
+    cursor: pointer;
+}
+header.active .bar_icon .fa-solid{
+    font-size: 30px;
+    color: var(--color_white);
+    cursor: pointer;
+}
+
+
+
 /* Header css End here  */
 
 /* Home content css start here  */
@@ -155,8 +174,11 @@ td span{
 
 
 /* Responsive css here  */
-/* @media (max-width : 480px) {
+@media (max-width : 480px) {
     header .menu{
         display: none;
     }
-} */
+    header .bar_icon{
+        display: block;
+    }
+}
