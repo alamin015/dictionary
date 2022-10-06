@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Root variable here  */
+:root{
+    --sticky_background : rgb(4, 0, 48);
+    --color_white: #fff;
+    --color_black: #000;
+}
+
+/* common css start here  */
+body{
+    background: #fff;
+}
+section{
+    padding: 60px 0px;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/* common css End here  */
+
+/* Header css start here  */
+header{
+    padding: 20px 0px;
+    background: #fff;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.205);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo a{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color_black);
+}
+
+nav .menu ul{
+    display: flex;
+    align-items: center;
+}
+nav .menu ul li{
+    margin-left: 20px;
+}
+nav .menu ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color_black);
+}
+/* Header css End here  */
+
+/* Home content css start here  */
+#home .table_width{
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+#home table{
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 500px;
+    
+}
+
+table tr, table td, table tr th{
+    border: 1px solid rgba(221, 221, 221, 0.822);
+    padding: 8px;
+    text-align: center;
+    
+}
+
+table tr:nth-child(even){
+    background: #fafafa;
+}
+
+td span{
+    margin: 0px 10px;
+}
+/* Home content css end here  */
