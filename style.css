@@ -43,11 +43,13 @@ header{
     padding: 20px 0px;
     background: var(--color_white);
     border-bottom: 1px solid rgba(221, 221, 221, 0.205);
+    box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease-in-out;
 }
 header.active{
     background: var(--sticky_background);
     transition: all 0.3s ease-in-out;
+    /* box-shadow: 3px 3px 14px rgba(4, 0, 48, 0.1); */
 }
 nav{
     display: flex;
