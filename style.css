@@ -87,6 +87,9 @@ header.active nav .menu ul li a{
     color: var(--sticky_background);
     cursor: pointer;
 }
+#times{
+    display: none;
+}
 header.active .bar_icon .fa-solid{
     font-size: 30px;
     color: var(--color_white);
@@ -127,7 +130,7 @@ table tr:nth-child(even){
 }
 
 td span{
-    margin: 0px 10px;
+    margin: 0px 15px;
     color: #000;
     font-size: 16px;
 }
