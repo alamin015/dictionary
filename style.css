@@ -78,7 +78,7 @@ nav .menu ul li a{
 
 table tr, table td, table tr th{
     border: 1px solid rgba(221, 221, 221, 0.822);
-    padding: 8px;
+    padding: 10px;
     text-align: center;
     
 }
@@ -89,5 +89,7 @@ table tr:nth-child(even){
 
 td span{
     margin: 0px 10px;
+    color: #000;
+    font-size: 16px;
 }
 /* Home content css end here  */
