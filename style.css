@@ -29,6 +29,9 @@ a{
 li{
     list-style-type: none;
 }
+img{
+    width: 100%;
+}
 .bar_icon{
     display: none;
 }
@@ -96,8 +99,39 @@ header.active .bar_icon .fa-solid{
     cursor: pointer;
 }
 
-
-
+.main_layout{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: var(--sticky_background);
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-80%,-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.main_layout.active{
+    transform: translate(0,0);
+    opacity: 11;
+    visibility: visible;
+    transition: all 0.2s ease-in-out;
+}
+.layout_flex_content{
+    text-align: center;
+}
+.layout_flex_content .layout h3{
+    font-size: 50px;
+    color:var(--color_white);
+    margin-bottom: 10px;
+}
+.layout_flex_content .layout img{
+    width: 100px;
+}
 /* Header css End here  */
 
 /* Home content css start here  */

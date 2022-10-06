@@ -1,4 +1,5 @@
 const header = document.querySelector("header");
+const main_layout = document.querySelector(".main_layout");
 const bar = document.getElementById("bar");
 const times = document.getElementById("times");
 
@@ -14,9 +15,11 @@ window.addEventListener("scroll",() => {
 bar.addEventListener("click",() => {
     bar.style.display = "none";
     times.style.display = "block";
+    main_layout.classList.add("active");
 });
 
 times.addEventListener("click",() => {
     times.style.display = "none";
     bar.style.display = "block";
+    main_layout.classList.remove("active");
 });
