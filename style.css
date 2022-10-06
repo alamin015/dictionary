@@ -33,9 +33,18 @@ li{
 
 /* Header css start here  */
 header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
     padding: 20px 0px;
-    background: #fff;
+    background: var(--color_white);
     border-bottom: 1px solid rgba(221, 221, 221, 0.205);
+    transition: all 0.3s ease-in-out;
+}
+header.active{
+    background: var(--sticky_background);
+    transition: all 0.3s ease-in-out;
 }
 nav{
     display: flex;
@@ -47,7 +56,9 @@ nav .logo a{
     font-weight: 700;
     color: var(--color_black);
 }
-
+header.active nav .logo a{
+    color: var(--color_white);
+}
 nav .menu ul{
     display: flex;
     align-items: center;
@@ -60,9 +71,16 @@ nav .menu ul li a{
     font-weight: 400;
     color: var(--color_black);
 }
+header.active nav .menu ul li a{
+    color: var(--color_white);
+}
 /* Header css End here  */
 
 /* Home content css start here  */
+#home{
+    margin-top: 75px;
+    /* background: red; */
+}
 #home .table_width{
     width: 100%;
     max-width: 992px;
@@ -93,3 +111,52 @@ td span{
     font-size: 16px;
 }
 /* Home content css end here  */
+
+
+
+/* about content css start here  */
+
+#about{
+    height: 100vh;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .about_content{
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about_content h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+.about_content button{
+    width: 220px;
+    height: 50px;
+    /* line-height: 50px; */
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(4, 0, 48);
+    border: 1px solid rgb(4, 0, 48);
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.about_content button:hover{
+    background: rgb(4, 0, 48);
+    color: #fff;
+    cursor: pointer;
+}
+/* about content css end here  */
+
+
+/* Responsive css here  */
+/* @media (max-width : 480px) {
+    header .menu{
+        display: none;
+    }
+} */
